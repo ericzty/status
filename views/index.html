@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EricNet Status</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="EricNet Status Page">
+        <meta name="author" content="EricNet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="EricNet"/>
+        <meta property="og:description" content="EricNet Status Page" />
+        <meta property="og:url" content="https://status.as206628.net" />
+        <meta property="og:theme-color" content="#2e3440" />
+        <meta property="og:image" content="/logo.png">
+        <meta name="theme-color" content="#2e3440" />
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="stylesheet" type="text/css" href="./static/style.css">
+        <meta http-equiv="refresh" content="15">
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                EricNet Status<br>
+            </h1>
+            <div class="statuses">
+            {{range .Status}}
+            <p>
+            <b>{{.Name}}</b>
+            {{if .Status4.Up}}
+            <span style="color:#a3be8c;">Up4</span>
+            {{else}}
+            <span style="color:#bf616a;">Down4</span>
+            {{end}}
+            {{if .Status6.Up}}
+            <span style="color:#a3be8c;">Up6</span>
+            {{else}}
+            <span style="color:#bf616a;">Down6</span>
+            {{end}}
+            {{end}}
+            </div>
+            <br>
+            </p>
+        </div>
+            <div class="footer">
+            Last refresh: {{.Time}}<br>
+            Support: eric@as206628.net
+            </div>
+    </body>
+</html>

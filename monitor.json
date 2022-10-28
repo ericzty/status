@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Schnitzel - Box0",
+        "target": "box0.he2.eric.si",
+        "method": "icmp"
+    },
+    {
+        "name": "Schnitzel - Box1",
+        "target": "box1.he2.eric.si",
+        "method": "icmp"
+    },
+    {
+        "name": "Schnitzel - Box2",
+        "target": "box2.he2.eric.si",
+        "method": "icmp"
+    },
+    {
+        "name": "West Coast Core Router",
+        "target": "gera0.he2.eric.si",
+        "method": "icmp"
+    },
+    {
+        "name": "East Coast Core Router",
+        "target": "gera0.sn3.eric.si",
+        "method": "icmp"
+    },
+    {
+        "name": "East Coast webserver",
+        "target": "ericz.dev",
+        "method": "match",
+        "match": "0xC15ECEC52397343B"
+    },
+    {
+        "name": "ExcellentFiles",
+        "target": "excellent.nyc/login",
+        "method": "head"
+    },
+    {
+        "name": "Hastebin",
+        "target": "bin.ericz.dev",
+        "method": "head"
+    },
+    {
+        "name": "OwO CDN",
+        "target": "not-a.link/2rtgApR.png",
+        "method": "match",
+        "match": "OK"
+    },
+    {
+        "name": "OwO API",
+        "target": "api.not-a.link/health",
+        "method": "match",
+        "match": "OK"
+    },
+    {
+        "name": "MC Host",
+        "target": "mc0.sn3.eric.si:4443/auth/login",
+        "method": "head"
+    }
+]
